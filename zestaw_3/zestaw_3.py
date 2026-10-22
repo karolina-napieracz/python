@@ -39,5 +39,22 @@ print(X)
 #append() nie działa na obiekt string
 #X = "abc" ; X.append("d")
 
-#pow musi otrzymać 2 argumenty pow(x,y) x^y
-L = list(map(pow(2,4), range(8)))
+#
+# L = list(map(pow, range(8)))
+
+#zadanie 3
+
+for i in range(30):
+    if i%3==0 :
+        continue
+    else:
+        print(i)
+
+j=0
+while j< 30 :
+    if j%3==0:
+        j+=1
+    else:
+        print(j)
+        j+=1
+    
