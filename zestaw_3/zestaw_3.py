@@ -57,4 +57,17 @@ while j< 30 :
     else:
         print(j)
         j+=1
-    
+
+
+#zadanie 4
+print("zadanie 3.4: ")
+while True:
+    x = input('Wprowadz liczbe typu int: ')
+
+    if x=='stop' :
+        break
+    try:
+        x = int(x)
+        print(x,x**3)
+    except ValueError:
+        print("wprowadz liczbe typu int")
