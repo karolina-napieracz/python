@@ -1,0 +1,16 @@
+#zadanie 5
+dlugosc = int(input())
+a = 0
+line = ''
+bottom_line=''
+while a <= dlugosc:
+    if a < dlugosc:
+        line += '|....'
+        bottom_line+=str(a)+'    '
+        a += 1
+    elif a == dlugosc:
+        line += '|'
+        bottom_line+=str(a)
+        a += 1
+
+print(line + '\n' + bottom_line)
