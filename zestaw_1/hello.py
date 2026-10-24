@@ -1,2 +1,2 @@
-print("Hello!") 
+quiprint("Hello!") 
 print("Dzień dobry!!") 
