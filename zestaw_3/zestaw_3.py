@@ -57,7 +57,3 @@ while j< 30 :
     else:
         print(j)
         j+=1
-
-
-
-
