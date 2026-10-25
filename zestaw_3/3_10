@@ -1,0 +1,36 @@
+#Stworzyć słownik tłumaczący liczby zapisane w systemie rzymskim (z literami I, V, X, L, C, D, M jako stringami) 
+#na liczby arabskie (podać kilka sposobów tworzenia takiego słownika). Mile widziany kod tłumaczący całą liczbę [funkcja roman2int()].
+
+def roman2int(roman):
+    liczby=[]
+    for a in roman:
+        match a:
+            case 'I':
+                a=1
+            case 'V':
+                a=5
+            case 'X':
+                a=10
+            case 'L':
+                a=50
+            case 'C':
+                a=100
+            case 'D':
+                a=500
+            case 'M':
+                a=1000
+        liczby.append(a)
+
+    i=0
+    while i < len(liczby)-1:
+        if liczby[i] < liczby[i+1]:
+            liczby[i]=liczby[i+1]-liczby[i]
+        else:
+            liczby[i]=liczby[i+1]+liczby[i]
+        liczby[i+1]=liczby[i]
+        i+=1
+
+    print(liczby[len(liczby)-1])
+
+
+roman2int('MVI')
