@@ -1,0 +1,27 @@
+#zadanie 3.8
+
+#Dla dwóch sekwencji liczb lub znaków znaleźć:
+sekwencja_1=input('wpisz sekwencje 1:')
+sekwencja_2=input('wpisz sekwencje 2:')
+#(a) listę elementów występujących jednocześnie w obu sekwencjach (bez powtórzeń),
+list=[]
+
+for a in sekwencja_1:
+    if a in sekwencja_2:
+        if a not in list :
+            list.append(a)
+
+print(list)
+#(b) listę wszystkich elementów z obu sekwencji (bez powtórzeń).
+
+full_list=[]
+
+for a in sekwencja_1:
+        if a not in full_list :
+            full_list.append(a)
+
+for a in sekwencja_2:
+     if a not in full_list :
+        full_list.append(a)
+
+print(full_list)
