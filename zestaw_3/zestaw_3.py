@@ -39,7 +39,8 @@ print(X)
 #append() nie działa na obiekt string
 #X = "abc" ; X.append("d")
 
-#
+#Map przekazuje range(8) jako argumenty do wywolania pow. 
+#Pow dostarcza po 1 argumencie przy wywolaniu, a pow potrzebuje dwoch od obliczenia potegi, wiec kod nie zadziala bo pow dostanie od range(8) tylko jeden argument
 # L = list(map(pow, range(8)))
 
 #zadanie 3
