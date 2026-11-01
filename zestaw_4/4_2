@@ -1,0 +1,43 @@
+#zadanie 5
+def make_ruler(n):
+    a = 0
+    line = ''
+    bottom_line = ''
+
+    while a <= n:
+        if a < n:
+            line += '|....'
+            bottom_line += str(a) + ' ' * (5 - len(str(a)))
+            a += 1
+        elif a == n:
+            line += '|'
+            bottom_line += str(a)
+            a += 1
+
+    print(line + '\n' + bottom_line)
+
+def make_grid(rows, cols):
+    line=''
+    bot_line=''
+    a=0
+    while a<=cols:
+        if a<cols:
+            line+='+---'
+            bot_line+='|   '
+            a+=1
+        if a==cols:
+            line+='+'
+            bot_line+='|'
+            a+=1
+    i=0
+    while i <= rows:
+        if i<rows:
+            print(line)
+            print(bot_line)
+            i+=1
+        if i==rows:
+            print(line)
+            i+=1
+
+make_ruler(20)
+make_grid(15, 5)
