@@ -1,0 +1,11 @@
+def factorial(n):
+    for a in range(n):
+        if a==0:
+            continue
+        else:
+            a*=n
+    print(a)
+
+factorial(3)
+factorial(7)
+factorial(10)
