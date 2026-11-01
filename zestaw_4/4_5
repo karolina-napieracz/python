@@ -10,4 +10,18 @@ def odwracanie(L, left, right):
 
     return L
 
+def odwracanie_rek(L, left, right):
+    if left >= right:
+        return L
+
+    c = L[left]
+    L[left] = L[right]
+    L[right] = c
+
+    return odwracanie_rek(L, left + 1, right - 1)
+
+
+
+
 print(odwracanie([1,2,3,4,5,6,7,8],2,7))
+print(odwracanie_rek([1,2,3,4,5,6,7,8],2,7))
