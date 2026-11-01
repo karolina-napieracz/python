@@ -1,0 +1,19 @@
+def fibonacci(n):
+    a=0
+    b=1
+
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    i=0
+    c=0
+    while i<n-1:
+        c=a +b
+        a=b
+        b=c
+        i+=1
+
+    return c
+
+print(fibonacci(17))
